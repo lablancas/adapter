@@ -241,3 +241,16 @@ if (typeof module !== 'undefined') {
     //trace: not exposed on purpose.
   };
 }
+
+if(typeof Meteor !== 'undefined'){
+    WebRTC = {
+        RTCPeerConnection: RTCPeerConnection,
+        getUserMedia: getUserMedia,
+        attachMediaStream: attachMediaStream,
+        reattachMediaStream: reattachMediaStream,
+        webrtcDetectedBrowser: webrtcDetectedBrowser,
+        webrtcDetectedVersion: webrtcDetectedVersion
+        //requestUserMedia: not exposed on purpose.
+        //trace: not exposed on purpose.
+    };
+}
